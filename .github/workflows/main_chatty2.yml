@@ -19,8 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '8.x'
-          include-prerelease: true
+          dotnet-version: '6.x' # Updated .NET Core version to 6.x
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -63,4 +62,3 @@ jobs:
           app-name: 'chatty2'
           slot-name: 'Production'
           package: .
-          
